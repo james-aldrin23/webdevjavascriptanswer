@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+
+        var today = new Date();
+        document.getElementById("demo").innerHTML =  getDay(today.getDay()) + ". The remaning days until sunday is   " + (7 - today.getDay() + 7)+ ".";
+
+        function getDay(day) {
+            let dayLetter;
+            switch (day) {
+                case 1:
+                    dayLetter = "Monday";
+                    break;
+                case 2:
+                    dayLetter = "Tuesday";
+                    break;
+                case 3:
+                    dayLetter = "Wednesday";
+                    break;
+                case 4: 
+                    dayLetter = "Thursday";
+                    break;
+                case 5: 
+                    dayLetter = "Friday";
+                    break;
+                case 6: 
+                    dayLetter = "Saturday";
+                    break;
+                case 7:
+                     dayLetter = "Sunday";
+                    break;
+            }            
+            return dayLetter
+        }
+    </script>
+</body>
+
+</html>

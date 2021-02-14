@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    alert ("a JavaScript program that computes the sum of two integers. If the two values are the same, it return triple of their sum. Please click ok to continue")
+   
+
+    function tripleSum(){
+        var number1=parseFloat(prompt("Enter your first number: "));
+        var number2=parseFloat(prompt("Enter your second number:"));
+        
+        if (number1==number2){
+            return (number1+number2)*3
+        }
+        else{
+            return (number1+number2)
+        }
+      
+    }
+    document.write(tripleSum());
+    
+
+    </script>
+    
+</body>
+</html>

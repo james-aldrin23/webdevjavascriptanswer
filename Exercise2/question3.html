@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button id="enabled" onclick="enable()">click1</button>
+  <button id="disabled" onclick="disable()">click2</button>
+ <script>
+     function enable() {
+        document.getElementById("enabled").disabled = false;
+         document.getElementById("disabled").disabled = true;
+     }
+     function disable() {
+       
+         document.getElementById("enabled").disabled = true;
+         document.getElementById("disabled").disabled = false;
+     }
+
+
+
+
+ </script>
+</body>
+</html>
